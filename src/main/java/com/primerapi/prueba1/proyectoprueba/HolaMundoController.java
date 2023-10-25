@@ -10,7 +10,7 @@ public class HolaMundoController {
     @RequestMapping("/hola")
     public String saludar(){
 
-        return "Nunca pares de aprender";
+        return "Nunca pares de mirar";
     }
     
 }
