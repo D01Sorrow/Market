@@ -1,4 +1,4 @@
-package com.primerapi.prueba1.proyectoprueba;
+package com.primerapi.prueba1.proyectoprueba.webController;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,7 +10,8 @@ public class HolaMundoController {
     @RequestMapping("/hola")
     public String saludar(){
 
-        return "Nunca pares de mirar";
+        return "Nunca pares de jugarrrrr";
+        
     }
     
 }
