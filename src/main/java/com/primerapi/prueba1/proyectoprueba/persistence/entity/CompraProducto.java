@@ -5,9 +5,11 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import lombok.Data;
 
 @Entity
 @Table(name = "compras_productos")
+@Data
 public class CompraProducto {
 
     @EmbeddedId
@@ -26,38 +28,4 @@ public class CompraProducto {
     @ManyToOne
     @JoinColumn(name = "id_producto", insertable = false, updatable = false)
     private Producto producto;
-
-    public CompraProductoPK getCompraProductoPK() {
-        return compraProductoPK;
-    }
-
-    public void setCompraProductoPK(CompraProductoPK compraProductoPK) {
-        this.compraProductoPK = compraProductoPK;
-    }
-
-    public Integer getCantidad() {
-        return cantidad;
-    }
-
-    public void setCantidad(Integer cantidad) {
-        this.cantidad = cantidad;
-    }
-
-    public Double getTotal() {
-        return total;
-    }
-
-    public void setTotal(Double total) {
-        this.total = total;
-    }
-
-    public Boolean getEstado() {
-        return estado;
-    }
-
-    public void setEstado(Boolean estado) {
-        this.estado = estado;
-    }
-
-    
 }
