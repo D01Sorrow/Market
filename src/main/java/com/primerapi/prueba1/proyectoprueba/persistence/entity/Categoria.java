@@ -1,6 +1,5 @@
 package com.primerapi.prueba1.proyectoprueba.persistence.entity;
 
-import javax.print.DocFlavor.STRING;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
